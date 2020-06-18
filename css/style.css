@@ -1,0 +1,36 @@
+body{
+    background-image: url("https://solesereno.it/wp-content/uploads/2015/07/prato-verde-alberi-di-conifere-sole-cielo-blu-147827.jpg");
+}
+
+[class^="col-"] img{
+    width: 100%;
+    height: 100%;
+}
+
+.col-xs-12{
+    background-color: red;
+}
+
+.col-xs-12::before{
+    content: "3/12";
+}
+
+@media screen and (min-width: 768px) {
+    .col-md-12{
+        background-color: orange;
+    }
+
+    .col-md-12::before{
+        content: "8/12";
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .col-lg-12{
+        background-color: green;
+    }
+
+    .col-lg-12::before{
+        content: "12/12";
+    }
+}
